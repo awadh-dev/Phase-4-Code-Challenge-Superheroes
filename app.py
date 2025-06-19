@@ -2,19 +2,19 @@ from flask import Flask, jsonify, request
 from flask_migrate import Migrate
 from models import db, Hero, Power, HeroPower
 
-# === CONFIG CLASS (was in config.py) ===
+
 class Config:
     SQLALCHEMY_DATABASE_URI = "sqlite:///superheroes.db"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-# === FLASK APP SETUP ===
+
 app = Flask(__name__)
 app.config.from_object(Config)
 
 db.init_app(app)
 migrate = Migrate(app, db)
 
-# === ROUTES ===
+
 @app.route('/')
 def home():
     return {'message': 'Superheroes API'}
