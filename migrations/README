@@ -1,6 +1,9 @@
 #  Superheroes API
 
-A Flask RESTful API for managing heroes, their superpowers, and the strength of their abilities. This project is part of the **Phase 4 Code Challenge** at Moringa School.
+A Flask RESTful API for managing heroes, their superpowers, and the strength of their abilities. 
+
+
+**Phase 4 Code Challenge** 
 
 ---
 
@@ -13,7 +16,7 @@ This API allows users to:
 - View and update power descriptions
 - Create new hero-power connections with strength levels
 
-The API follows RESTful conventions and responds with clean JSON data.
+
 
 ---
 
